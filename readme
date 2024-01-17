@@ -1,0 +1,10 @@
+source ~/cmsset
+root Readhist.C
+#Then out_e120_mg.txt ... produced
+python3 Final_Draw_QCD_EWK.py e >& ele.log &
+python3 Final_Draw_QCD_EWK.py mu >& muon.log &
+python3 Final_Draw_QCD_EWK.py tau >& tau.log &
+
+Figure/W_diff_Final_xsec_e.png
+Figure/W_diff_Final_xsec_mu.png
+Figure/W_diff_Final_xsec_tau.png
